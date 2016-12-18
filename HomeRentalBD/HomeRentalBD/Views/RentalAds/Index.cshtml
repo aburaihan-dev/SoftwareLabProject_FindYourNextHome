@@ -1,0 +1,165 @@
+﻿@model IEnumerable<HomeRentalBD.Models.RentalAds>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Banner)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.City)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Area)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FloorType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LivingRoom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DiningRoom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DrawingRoom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Size)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ServiceCharge)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SecurityDeposit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LeaseTerm)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BedRoom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AttachedBath)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CommonBath)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StaffBath)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Balcony)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FloorLevel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Kitchen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ServentRoom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MapLng)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MapLat)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Banner)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.City)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Area)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Category)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FloorType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LivingRoom)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DiningRoom)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DrawingRoom)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Size)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ServiceCharge)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SecurityDeposit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LeaseTerm)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BedRoom)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AttachedBath)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CommonBath)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StaffBath)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Balcony)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FloorLevel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Kitchen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ServentRoom)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MapLng)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MapLat)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,176 @@
+﻿@model HomeRentalBD.Models.RentalAds
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>RentalAds</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Banner)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Banner)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.City)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.City)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Area)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Area)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Category)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Category)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FloorType)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FloorType)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LivingRoom)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LivingRoom)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DiningRoom)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DiningRoom)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DrawingRoom)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DrawingRoom)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Size)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Size)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Price)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Price)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ServiceCharge)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ServiceCharge)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SecurityDeposit)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SecurityDeposit)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LeaseTerm)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LeaseTerm)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.BedRoom)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.BedRoom)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AttachedBath)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AttachedBath)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CommonBath)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CommonBath)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.StaffBath)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StaffBath)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Balcony)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Balcony)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FloorLevel)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FloorLevel)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Kitchen)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Kitchen)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ServentRoom)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ServentRoom)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.MapLng)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.MapLng)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.MapLat)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.MapLat)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
